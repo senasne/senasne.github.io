@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+
+<head> 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+<title>
+	Dokumentin otsikko
+</title>
+
+<style>
+
+	#otsikkolaatikko {
+		position: fixed;
+		font-size : 55px;
+		color : #FFFFFF;
+		position : absolute;
+		top : 110px;
+		left : 50px;
+		font-family : Merriweather, serif;
+	}
+
+	#sivulaatikko {
+		font-size : 17px;
+		color : #E7E7E7;
+		position : absolute;
+		top : 200px;
+		left : 50px;
+		font-family : "Open Sans", sans-serif;
+		width : 500px;
+		height : 100px;
+	}
+
+	#linkit {
+		position : absolute;
+		top : 320px;
+		left : 60px;
+		font-size : 16px;
+		font-family : "Open Sans", sans-serif;
+	}
+
+	.sivulinkki {
+		text-decoration : none;
+		color : rgba(255, 255, 255, 0.7);
+	}
+
+	.sivulinkki:visited {
+		color : #D1D1D1;
+	}
+
+	.sivulinkki:hover {
+		color : #FFFFFF;
+		font-size : 105%;
+		text-decoration : none;
+	}
+
+	.sivulinkki:active {
+		color : #FFFFFF !important;
+		font-size : 105% !important;
+		text-decoration : none;
+	}
+
+	.active-link {
+    		color: #FFFFFF !important;
+    		font-size: 105%;
+    		font-weight: bold;
+    		text-decoration: none;
+	}
+
+	#keskilaatikko {
+		position : absolute;
+		top : 80px;
+		left : 625px;
+		width : 575px;
+		height : 520px;
+		font-family : "Open Sans", sans-serif;
+		font-size : 16px;
+		color : rgba(255, 255, 255, 0.7);
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+	}	
+
+	body {
+		background-color: #021334;
+	}
+
+	pre {
+    		background-color: #1C2B38;
+    		color: #dcdcdc; 
+    		font-family: "Courier New", monospace;
+    		border-radius: 5px;
+    		overflow-x: auto;
+    		white-space: pre-wrap;
+    		border: 1px solid #333;
+	}
+
+	code {
+    		font-size: 16px;
+	}
+
+	@keyframes smooth-flip {
+    		0% {
+        		transform: rotateY(0deg);
+    		}
+    		50% {
+        		transform: rotateY(180deg);
+    		}
+    		100% {
+        		transform: rotateY(360deg);
+    		}
+	}
+
+	.rotating-image {
+    		animation: smooth-flip 4s ease-in-out infinite;
+	}
+
+</style>
+</head>
+
+
+<body>
+
+	<div id="otsikkolaatikko">
+	ByteBasics
+	</div>
+
+	<div id="sivulaatikko">
+	ByteBasics – Building a strong foundation in coding, one step at a time.
+	</div>
+
+	<div id="linkit">
+		<a href="index.html" class="sivulinkki">→ Introduction</a><br /><br />
+		<a href="fundamentalconcepts.html" class="sivulinkki active-link">→ Fundamental Concepts</a><br /><br />
+		<a href="webdevelopmentbasics.html" class="sivulinkki">→ Web Development Basics</a><br /><br />
+		<a href="resourcesandlearningpath.html" class="sivulinkki">→ Resources & Learning Path</a><br /><br />
+		<a href="videosandtutorials.html" class="sivulinkki">→ Videos & Tutorials</a><br /><br />
+	</div>
+
+	<div id="keskilaatikko">
+		Every programming language is built on a few core concepts. Here are some of the most essential 	ones:
+	<br /><br />
+		1. Variables & Data Types
+	Variables store information that can be used later. Different data types define the kind of values stored.
+	Example (Python):
+	<br />
+       	<pre><code class="language-python">
+	name = "Alice" 
+	age = 20        
+	height = 5.6    
+	is_student = True 
+	</code></pre> 
+
+	<br />
+
+	2. Conditional Statements
+	These allow programs to make decisions.
+	Example (JavaScript):
+	<br />
+	<pre><code class="language-javascript">
+	let score = 85;
+	if (score >= 50) {
+    	console.log("You passed!");
+	} else {
+    	console.log("Try again!");
+	}
+	</code>
+	</pre> 
+
+	<br />
+
+	3. Loops
+	Loops execute a block of code multiple times.
+	Example (Python - For Loop):
+	<br />
+	<pre><code class="language-python">
+	for i in range(5):
+    		print("Hello!")
+	</code>
+	</pre> 
+
+	<br />
+
+	4. Functions
+	Functions group reusable blocks of code.
+	Example (Python):
+	<br />
+	<pre><code class="language-python">
+	def greet(name):
+    		return "Hello, " + name + "!"
+	print(greet("Alice"))
+	</code>
+	</pre> 
+
+	<br />
+
+	These basics apply to almost every programming language, making them the foundation of coding.
+
+	</div>
+
+	<div id="logo">
+	<img src="codelogo2.png" width="40px" height="auto" alt="Rotating Image" class="rotating-image"/>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+	
+</body>
+
+</html>

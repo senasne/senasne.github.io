@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head> 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+<link rel="stylesheet" href="styles.css">
+
+<title>
+	Dokumentin otsikko
+</title>
+
+<style>
+
+	#otsikkolaatikko {
+		font-size : 55px;
+		color : #FFFFFF;
+		position : absolute;
+		top : 110px;
+		left : 50px;
+		font-family : Merriweather, serif;
+	}
+
+	#sivulaatikko {
+		font-size : 17px;
+		color : #E7E7E7;
+		position : absolute;
+		top : 200px;
+		left : 50px;
+		font-family : "Open Sans", sans-serif;
+		width : 500px;
+		height : 100px;
+	}
+
+	#linkit {
+		position : absolute;
+		top : 320px;
+		left : 60px;
+		font-size : 16px;
+		font-family : "Open Sans", sans-serif;
+	}
+
+	.sivulinkki {
+		text-decoration : none;
+		color : rgba(255, 255, 255, 0.7);
+	}
+
+	.sivulinkki:visited {
+		color : #D1D1D1;
+	}
+
+	.sivulinkki:hover {
+		color : #FFFFFF;
+		font-size : 105%;
+		text-decoration : none;
+	}
+
+	.sivulinkki:active {
+		color : #FFFFFF;
+		font-size : 105%;
+		text-decoration : none;
+	}
+
+	.active-link {
+    		color: #FFFFFF !important;
+    		font-size: 105%;
+    		font-weight: bold;
+    		text-decoration: none;
+	}
+
+	#keskilaatikko {
+		position : absolute;
+		top : 80px;
+		left : 625px;
+		width : 575px;
+		height : 520px;
+		font-family : "Open Sans", sans-serif;
+		font-size : 16px;
+		color : rgba(255, 255, 255, 0.7);
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+	}
+
+	body {
+		background-color: #021334;
+	}
+
+	@keyframes smooth-flip {
+    		0% {
+        		transform: rotateY(0deg);
+    		}
+    		50% {
+        		transform: rotateY(180deg);
+    		}
+    		100% {
+        		transform: rotateY(360deg);
+    		}
+	}
+
+	.rotating-image {
+    		animation: smooth-flip 4s ease-in-out infinite;
+	}
+
+</style>
+</head>
+
+
+<body>
+
+	<div id="otsikkolaatikko">
+	ByteBasics
+	</div>
+
+	<div id="sivulaatikko">
+	ByteBasics – Building a strong foundation in coding, one step at a time.
+	</div>
+
+	<div id="linkit">
+		<a href="index.html" class="sivulinkki">→ Introduction</a><br /><br />
+		<a href="fundamentalconcepts.html" class="sivulinkki">→ Fundamental Concepts</a><br /><br />
+		<a href="webdevelopmentbasics.html" class="sivulinkki active-link">→ Web Development Basics</a><br /><br />
+		<a href="resourcesandlearningpath.html" class="sivulinkki">→ Resources & Learning Path</a><br /><br />
+		<a href="videosandtutorials.html" class="sivulinkki">→ Videos & Tutorials</a><br /><br />
+	</div>
+
+	<div id="keskilaatikko">
+		Web development is the foundation of the modern internet, allowing us to create everything from simple personal blogs to interactive web applications. It is a vast field, but at its core, it revolves around three essential technologies:
+	<br /><br />
+<p><strong><span style="color: #FFFFFF;">HTML (HyperText Markup Language)</span></strong></p>: The structure of a webpage. It defines headings, paragraphs, links, images, and other content elements that make up a website.
+	<br /><br />
+<p><strong><span style="color: #FFFFFF;">CSS (Cascading Style Sheets)</span></strong></p>: The design and layout of a webpage. It controls colors, fonts, spacing, positioning, and responsiveness to make websites visually appealing.
+	<br /><br />
+<p><strong><span style="color: #FFFFFF;">JavaScript</span></strong></p>: The functionality of a webpage. It adds interactivity, animations, and dynamic content, making websites more engaging and user-friendly.
+	<br /><br />
+Mastering these fundamentals is the first step toward becoming a web developer. Whether you're designing a personal portfolio, a business website, or a complex web application, these three technologies work together to bring your ideas to life.
+	<br /><br />
+Beyond these basics, web development also includes frameworks, libraries, and backend technologies that enhance performance and functionality. However, before diving into advanced topics, a strong grasp of HTML, CSS, and JavaScript is crucial.
+	<br /><br />
+By learning these web development essentials, you will have the ability to create structured, styled, and interactive websites, setting the stage for more advanced development techniques in the future.
+	</div>
+
+	<div id="logo">
+	<img src="codelogo2.png" width="40px" height="auto" alt="Rotating Image" class="rotating-image"/>
+	</div>
+
+</body>
+
+</html>

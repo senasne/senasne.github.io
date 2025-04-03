@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head> 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+<link rel="stylesheet" href="styles.css">
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+	Dokumentin otsikko
+</title>
+
+<style>
+
+	#otsikkolaatikko {
+		font-size : 55px;
+		color : #FFFFFF;
+		position : absolute;
+		top : 110px;
+		left : 50px;
+		font-family : Merriweather, serif;
+	}
+
+	#sivulaatikko {
+		font-size : 17px;
+		color : #E7E7E7;
+		position : absolute;
+		top : 200px;
+		left : 50px;
+		font-family : "Open Sans", sans-serif;
+		width : 500px;
+		height : 100px;
+	}
+
+	#linkit {
+		position : absolute;
+		top : 320px;
+		left : 60px;
+		font-size : 16px;
+		font-family : "Open Sans", sans-serif;
+	}
+
+	.sivulinkki {
+		text-decoration : none;
+		color : rgba(255, 255, 255, 0.7);
+	}
+
+	.sivulinkki:visited {
+		color : #D1D1D1;
+	}
+
+	.sivulinkki:hover {
+		color : #FFFFFF;
+		font-size : 105%;
+		text-decoration : none;
+	}
+
+	.sivulinkki:active {
+		color : #FFFFFF;
+		font-size : 105%;
+		text-decoration : none;
+	}
+
+	.active-link {
+    		color: #FFFFFF !important;
+    		font-size: 105%;
+    		font-weight: bold;
+    		text-decoration: none;
+	}
+
+	#keskilaatikko {
+		position : absolute;
+		top : 80px;
+		left : 625px;
+		width : 575px;
+		height : 520px;
+		font-family : "Open Sans", sans-serif;
+		font-size : 16px;
+		color : rgba(255, 255, 255, 0.7);
+	}
+
+	.channel-card {
+            	display: flex;
+            	align-items: center;
+            	border: 1px solid #ddd;
+            	border-radius: 8px;
+            	padding: 15px;
+            	margin: 10px 0;
+            	text-decoration: none;
+            	color: #40E0D0;
+            	transition: 0.3s;
+        }
+
+        .channel-card:hover {
+            	background-color: #2b7394;
+        }
+
+        .channel-info {
+            	flex-grow: 1;
+        }
+
+        .channel-name {
+            	font-size: 18px;
+            	font-weight: bold;
+        }
+
+        .channel-desc {
+            	font-size: 14px;
+            	color: #FFFFFF;
+        }
+	
+	body {
+		background-color: #021334;
+	}
+
+	@keyframes smooth-flip {
+    		0% {
+        		transform: rotateY(0deg);
+    		}
+    		50% {
+        		transform: rotateY(180deg);
+    		}
+    		100% {
+        		transform: rotateY(360deg);
+    		}
+	}
+
+	.rotating-image {
+    		animation: smooth-flip 4s ease-in-out infinite;
+	}
+
+</style>
+</head>
+
+
+<body>
+
+	<div id="otsikkolaatikko">
+	ByteBasics
+	</div>
+
+	<div id="sivulaatikko">
+	ByteBasics – Building a strong foundation in coding, one step at a time.
+	</div>
+
+	<div id="linkit">
+		<a href="index.html" class="sivulinkki">→ Introduction</a><br /><br />
+		<a href="fundamentalconcepts.html" class="sivulinkki">→ Fundamental Concepts</a><br /><br />
+		<a href="webdevelopmentbasics.html" class="sivulinkki">→ Web Development Basics</a><br /><br />
+		<a href="resourcesandlearningpath.html" class="sivulinkki">→ Resources & Learning Path</a><br /><br />
+		<a href="videosandtutorials.html" class="sivulinkki active-link">→ Videos & Tutorials</a><br /><br />
+	</div>
+
+	<div id="keskilaatikko">
+<a href="https://www.youtube.com/c/TheNetNinja" class="channel-card" target="_blank">
+	<div class="channel-info">
+        <div class="channel-name">The Net Ninja</div>
+        <div class="channel-desc">Shaun Pelling, known as The Net Ninja, provides a vast library of tutorials covering front-end and back-end technologies. His playlists are well-structured, making it easy to follow along and build projects.​</div>
+    </div>
+</a>
+
+<a href="https://www.youtube.com/c/WebDevSimplified" class="channel-card" target="_blank">
+        <div class="channel-info">
+        <div class="channel-name">Web Dev Simplified</div>
+        <div class="channel-desc">This channel focuses on teaching web development skills and techniques efficiently. Topics range from beginner to advanced levels, covering essential concepts and best practices.​</div>
+    </div>
+</a>
+
+<a href="https://www.youtube.com/c/Freecodecamp" class="channel-card" target="_blank">
+    <div class="channel-info">
+        <div class="channel-name">freeCodeCamp.org</div>
+        <div class="channel-desc">Beyond its interactive learning platform, freeCodeCamp offers a YouTube channel with full-length courses on web development, programming languages, and data science, all for free.</div>
+    </div>
+</a>
+
+<a href="https://www.youtube.com/c/TraversyMedia" class="channel-card" target="_blank">
+    <div class="channel-info">
+        <div class="channel-name">Traversy Media</div>
+        <div class="channel-desc">Hosted by Brad Traversy, this channel offers comprehensive tutorials on various web development topics, including HTML, CSS, JavaScript, and modern frameworks. Brad's clear explanations make complex concepts accessible.​</div>
+    </div>
+</a>
+	</div>
+
+	<div id="logo">
+	<img src="codelogo2.png" width="40px" height="auto" alt="Rotating Image" class="rotating-image"/>
+	</div>
+
+</body>
+
+</html>
